@@ -61,15 +61,18 @@ Tú misión será crear la nueva versión del sistema utilizando el patrón Deco
    * Interfaz Helado indicando la implementación de los métodos getDescription y getPrice.
    * Clase HeladoSuave que implementa los métodos base de getDescription y getPrice.
    * DecoradorCobertura, DecoradorGalleta, DecoradorGranola, DecoradorMermelada y DecoradorTopping: Clases que implementan la interfaz Helado y contienen un objeto helado sobre el que 'añaden comportamiento'
-   ![Diagrama de patrón decorador](img\Helado_structure.svg)
+   ![Diagrama de patrón decorador](img\Helado_structure.png)
 
 #### 2. Implementación de clases
 ##### 2.1 Interfaz Helado
+
 https://github.com/adavals/bedu-webjava-f2/blob/708bde5fe908b2185bdbc5051a5b8e354e58835f/gvs/postwork2/src/main/java/Helado.java
 
+https://github.com/adavals/bedu-webjava-f2/blob/af098ba0a210e4bde5d4850533df18c362255136/gvs/postwork2/src/main/java/Helado.java
 ```
 https://github.com/adavals/bedu-webjava-f2/blob/708bde5fe908b2185bdbc5051a5b8e354e58835f/gvs/postwork2/src/main/java/Helado.java
 
+https://github.com/adavals/bedu-webjava-f2/blob/af098ba0a210e4bde5d4850533df18c362255136/gvs/postwork2/src/main/java/Helado.java
 ```
 ##### 2.2 Clase HeladoSuave
 ```
