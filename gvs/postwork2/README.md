@@ -63,15 +63,67 @@ Tú misión será crear la nueva versión del sistema utilizando el patrón Deco
    * DecoradorCobertura, DecoradorGalleta, DecoradorGranola, DecoradorMermelada y DecoradorTopping: Clases que implementan la interfaz Helado y contienen un objeto helado sobre el que 'añaden comportamiento'
    ![Diagrama de patrón decorador](img/Helado_structure.png)
 
-#### 2. Implementación de clases
-https://github.com/adavals/bedu-webjava-f2/blob/ca77ef26ac968767b3dc420eaa562acb2688e0be/gvs/postwork2/src/main/java/Aplicacion.java    
+#### 2. Implementación de clases y aplicación
+##### 2.1 [Ver código de clases](src/main/java)
 
-[Ver código](src/main/java)
+##### 2.2 Aplicación.java
+```
+public class Aplicacion {
+    public static void main(String[] args){
+        Helado heladoSuave = new HeladoSuave();
+        System.out.println("Ya tengo un: " + heladoSuave.getDescription());
+        System.out.printf("Por: $ %d \n", heladoSuave.getPrice());
 
+        System.out.println("Le agregamos cobertura... ");
+        heladoSuave = new DecoradorCobertura(heladoSuave);
+        System.out.println("Ahora tengo un: " + heladoSuave.getDescription());
+        System.out.printf("Por: $ %d \n", heladoSuave.getPrice());
+
+        System.out.println("Le agregamos granola... ");
+        heladoSuave = new DecoradorGranola(heladoSuave);
+        System.out.println("Ahora tengo un: " + heladoSuave.getDescription());
+        System.out.printf("Por: $ %d \n", heladoSuave.getPrice());
+
+        System.out.println("Le agregamos topping... ");
+        heladoSuave = new DecoradorTopping(heladoSuave);
+        System.out.println("Ahora tengo un: " + heladoSuave.getDescription());
+        System.out.printf("Por: $ %d \n", heladoSuave.getPrice());
+
+        System.out.println("Le agregamos mermelada... ");
+        heladoSuave = new DecoradorMermelada(heladoSuave);
+        System.out.println("Ahora tengo un: " + heladoSuave.getDescription());
+        System.out.printf("Por: $ %d \n", heladoSuave.getPrice());
+
+        System.out.println("Y le agregamos galleta... ");
+        heladoSuave = new DecoradorGalleta(heladoSuave);
+        System.out.println("Ahora tengo un: " + heladoSuave.getDescription());
+        System.out.printf("Por: $ %d \n", heladoSuave.getPrice());
+
+        System.out.println("...y 200 de nivel de glucosa en sangre");
+   }
+}
+```
 
 #### 3. Resultado
 Ejecución de la aplicación
 ```
-....
+Ya tengo un: Helado Suave
+Por: $ 30
+Le agregamos cobertura...
+Ahora tengo un: Helado Suave + Cobertura
+Por: $ 50
+Le agregamos granola...
+Ahora tengo un: Helado Suave + Cobertura + Granola
+Por: $ 60
+Le agregamos topping...
+Ahora tengo un: Helado Suave + Cobertura + Granola + Topping
+Por: $ 80
+Le agregamos mermelada...
+Ahora tengo un: Helado Suave + Cobertura + Granola + Topping + Mermelada
+Por: $ 90
+Y le agregamos galleta...
+Ahora tengo un: Helado Suave + Cobertura + Granola + Topping + Mermelada + Galleta
+Por: $ 105
+...y 200 de nivel de glucosa en sangre
 ```
-La clase inicial ...
+
