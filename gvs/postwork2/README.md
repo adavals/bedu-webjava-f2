@@ -53,15 +53,17 @@ Tú misión será crear la nueva versión del sistema utilizando el patrón Deco
 ### Desarrollo
 #### 1. Diseño de aplicación y clases
 1. Aplicación con clase main: 
-   * Crea el objeto Helado que tiene la implementación del patrón decorador.
-   * Llama a los métodos getDescription y getPrice para mostrar las características del helado.
-   * Crea los objetos decoradores para agregar características al helado inicial.
-   * Llama a los métodos getDescription y getPrice para mostrar las características añadidas al helado.
+   * Crea el objeto HeladoSuave que tiene la implementación base del patrón decorador.
+   * Llama a los métodos getDescription y getPrice para mostrar las características del helado suave.
+   * Crea los objetos decoradores para agregar características al helado suave inicial.
+   * Llama a los métodos getDescription y getPrice para mostrar las características añadidas al helado suave.
 2. Patrón decorador:
    * Interfaz Helado indicando la implementación de los métodos getDescription y getPrice.
    * Clase HeladoSuave que implementa los métodos base de getDescription y getPrice.
    * DecoradorCobertura, DecoradorGalleta, DecoradorGranola, DecoradorMermelada y DecoradorTopping: Clases que implementan la interfaz Helado y contienen un objeto helado sobre el que 'añaden comportamiento'
-   ![Diagrama de patrón decorador](img/Helado_structure.png)
+   
+     ![Diagrama de patrón decorador](img/Helado_structure.png)
+   
 
 #### 2. Implementación de clases y aplicación
 ##### 2.1 [Ver código de clases](src/main/java)
