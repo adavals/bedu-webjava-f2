@@ -64,9 +64,7 @@ Tú misión será crear la nueva versión del sistema utilizando el patrón Deco
    ![Diagrama de patrón decorador](img/Helado_structure.png)
 
 #### 2. Implementación de clases
-##### 2.1 Interfaz Helado
-
-https://github.com/adavals/bedu-webjava-f2/blob/fdfb0c679e4ffdbe48bcd88ffc8c56131f01cdec/gvs/postwork2/src/main/java/Helado.java#LL1-L4C2
+##### 2.1 [Interfaz Helado]("src/main/java/Helado.java")
 
 ##### 2.2 Clase HeladoSuave
 ```
