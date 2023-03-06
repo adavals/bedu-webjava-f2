@@ -64,24 +64,10 @@ Tú misión será crear la nueva versión del sistema utilizando el patrón Deco
    ![Diagrama de patrón decorador](img/Helado_structure.png)
 
 #### 2. Implementación de clases
-##### 2.1 [Ver código](src/main/java)
+https://github.com/adavals/bedu-webjava-f2/blob/ca77ef26ac968767b3dc420eaa562acb2688e0be/gvs/postwork2/src/main/java/Aplicacion.java    
 
-##### 2.2 Clase HeladoSuave
-```
-..
-```
-##### 2.3 Clase DecoradorCobertura
-```
-..
-```
-##### 2.4 Clases DecoradorGranola, DecoradorTopping, DecoradorMermelada y DecoradorGalleta
-```
-..
-```
-##### 2.5 Clase Aplicacion
-```
-..
-```
+[Ver código](src/main/java)
+
 
 #### 3. Resultado
 Ejecución de la aplicación
