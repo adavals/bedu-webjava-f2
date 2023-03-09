@@ -1,0 +1,8 @@
+plugins {
+    id 'application'
+}
+
+//No olvidar signo =
+application {
+    mainClass = "IceCreamShop"
+}
