@@ -3,6 +3,6 @@
 - Aldo
 - Alma Guadalupe López Arellano
 - Guadalupe Valenzuela Soto
-- Jesús David Lovera
+- Jesús David Lovera Sotelo
 - Marco Antonio Cárdenas Medina
 - Pablo Alejandro Salcedo Medrano
