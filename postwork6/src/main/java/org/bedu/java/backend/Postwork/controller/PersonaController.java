@@ -3,6 +3,7 @@ package org.bedu.java.backend.Postwork.controller;
 
 import org.bedu.java.backend.Postwork.model.Persona;
 import org.bedu.java.backend.Postwork.service.ValidadorTelefono;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,11 +19,12 @@ public class PersonaController {
     @PostMapping
     public ResponseEntity<Persona> creaPersona(@RequestBody Persona persona){
         ValidadorTelefono validadorTelefono = new ValidadorTelefono();
-        if(validadorTelefono.isValido(persona.getTelefono())){
-            return ResponseEntity.ok(persona);
+        if(validadorTelefono.isValido(persona.getTelefono())) {
+            System.out.println("Success!");
+            return ResponseEntity.status(HttpStatus.CREATED).body(persona);
         }
-
-        return ResponseEntity.ok(persona);
+        System.out.println("not good");
+        return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(null);
     }
 
 
