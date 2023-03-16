@@ -22,13 +22,13 @@ public class PersonaController {
         ValidadorTelefono validadorTelefono = new ValidadorTelefono();
         persona.setTelefono(validadorTelefono.limpiaNumero(persona.getTelefono()));
         if(validadorTelefono.isValido(persona.getTelefono())) {
-            System.out.println("Success!");
+            System.out.println("Creando persona.");
             FormateadorTelefono formateadorTelefono = new FormateadorTelefono();
             persona.setTelefono(formateadorTelefono.formatea(persona.getTelefono()));
             return ResponseEntity.status(HttpStatus.CREATED).body(persona);
         }
 
-        System.out.println("not good");
+        System.out.println("Telefono no valido.");
         return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(null);
     }
 
