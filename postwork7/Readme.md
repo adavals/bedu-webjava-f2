@@ -14,3 +14,7 @@
 ***Extra: Se agregó un archivo CSS siguiendo los patrones de imágen de Bedu***
 
 #### El proyecto funcionando se ve de la siguiente manera:
+
+
+https://user-images.githubusercontent.com/118947386/226814466-a316cdb6-2fb9-4e54-99ed-c0cf7e784e88.mp4
+
