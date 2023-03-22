@@ -2,22 +2,38 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Registro</title>
+    <link th:href="@{/styles//main.css}" rel="stylesheet" />
 </head>
 <body>
-<form th:action="@{/registro}" th:object="${usuario}" method="post">
-    <div>
-        <label for="nombre">Nombre: </label>
-        <input id="nombre" type="text" th:field="*{nombre}">
-        <div th:if="${#fields.hasErrors('nombre')}" th:errorclass="error" th:errors="*{nombre}"></div>
-    </div>
-    <div>
-        <label for="telefono">Teléfono: </label>
-        <input id="telefono" type="text" th:field="*{telefono}">
-        <div th:if="${#fields.hasErrors('telefono')}" th:errorclass="error" th:errors="*{telefono}"></div>
-    </div>
-    </div>
+    <main>
 
-    <input type="submit" th:value="Guardar"/>
-</form>
+    <div class="container">
+    <form th:action="@{/registro}" th:object="${persona}" method="post">
+
+        <div>
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text" th:field="*{nombre}">
+            <div style="color:Orange" th:if="${#fields.hasErrors('nombre')}" th:errorclass="error" th:errors="*{nombre}"></div>
+        </div><br>
+        <div>
+            <label for="telefono">Telefono: </label>
+            <input id="telefono" type="text" th:field="*{telefono}">
+            <div style="color:Orange" th:if="${#fields.hasErrors('telefono')}" th:errors="*{telefono}"></div>
+        </div><br>
+
+        <input type="submit" th:value="Guardar"/><br>
+    </form> <br>
+
+    </div>
+        <div class="card-container" id>
+
+            <div th:each="persona : ${personas}" class="card">
+                <h3 class="card-title" th:text="${persona.nombre}"></h3>
+                <h2 class="card-text" th:text="${persona.telefono}"></h2>
+            </div>
+        </div>
+
+    </main>
 </body>
+
 </html>
