@@ -12,12 +12,13 @@ public class AgendaService {
     private Agenda agenda;
     private ValidadorTelefono validadorTelefono;
     private FormateadorTelefono formateadorTelefono;
+    private AgendaMemoryDao agendaDao;
     @Autowired
     public AgendaService (Agenda agenda, ValidadorTelefono validadorTelefono, FormateadorTelefono formateadorTelefono){
         this.agenda=agenda;
         this.validadorTelefono=validadorTelefono;
         this.formateadorTelefono=formateadorTelefono;
-    }
+        this.agendaDao = agendaDao;    }
 
     public Persona creaPersona(Persona persona){
         if(validadorTelefono.isValido(persona.getTelefono())) {
