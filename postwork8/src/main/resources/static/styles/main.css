@@ -3,14 +3,15 @@
   padding: 0;
   font-family: sans-serif;
 }
+
 main{
   height: 100vh;
   background: url('https://i.imgur.com/YFl21T5.png') fixed center;
   /*background: linear-gradient(123deg, #8B2ECC 0%, #67E0E8 100%);*/
   background-size: cover;
 }
-.container{
 
+.container{
   width: 350px;
   height: 400px;
   background: inherit;
@@ -24,6 +25,7 @@ main{
   border-radius: 8px;
   border: 1px solid #BB4E08;
 }
+
 .container:before{
   width: 400px;
    height: 550px;
@@ -36,21 +38,23 @@ main{
   background: inherit;
   box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);
   filter: blur(10px);
-
 }
+
 form{
   text-align: center;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-
 }
+
 label{
     font-size: 24px;
     color: rgba(41, 41, 41, 0.91);
     font-weight: bold;
+    pointer-events:none
 }
+
 input{
   background: 0;
   width: 200px;
@@ -62,7 +66,14 @@ input{
   font-size: 18px;
   font-weight: bold;
   color: rgba(255,255,255, 0.8);
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
 }
+
+input[type="text"]:hover{
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
 input[type="submit"]{
   border: 0;
   border-radius: 8px;
@@ -73,17 +84,20 @@ input[type="submit"]{
   cursor: pointer;
   transition: all 600ms ease-in-out;
 }
+
 input[type="submit"]:hover{
   background: #C0392B;
 }
+
 span a{
   color: rgba(255,255,255, 0.8);
 }
 
 h1{
     text-align:center;
-    color: rgba(177, 177, 177, 0.91));
+    color: rgba(177, 177, 177, 0.91);
 }
+
 .card-container {
     width: 600px;
     position: absolute;
@@ -98,7 +112,6 @@ h1{
 }
 
 .card {
-  background: $white;
   width: 170px;
   height: 100px;
   border: 1px solid #ccc;
@@ -109,8 +122,12 @@ h1{
   flex-direction: column;
   justify-content: center;
   box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
 
-
+.card:hover {
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.5);
 }
 
 .card-title {
