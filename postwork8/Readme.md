@@ -16,4 +16,4 @@
 5. Los elementos de la aplicación se conectaron a través de servicios y controladores de Spring MVC.
 
 #### El proyecto funcionando se ve de la siguiente manera:
-![pantalla-aplicacion](/img/pantalla-aplicacion.png)
+![pantalla-aplicacion](img/pantalla-aplicacion.png)
