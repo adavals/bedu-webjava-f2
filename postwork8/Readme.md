@@ -17,3 +17,11 @@
 
 #### El proyecto funcionando se ve de la siguiente manera:
 ![pantalla-aplicacion](img/pantalla-aplicacion.png)
+
+- Conexión a base de datos con H2 Console:
+
+![pantalla-h2-console-connection](img/pantalla-h2-console-connection.png)
+
+![pantalla-h2-console](img/pantalla-h2-console.png)
+
+
