@@ -1,0 +1,4 @@
+<div th:each="persona : ${personas}" class="card">
+  <h3 class="card-title" th:text="${persona.nombre}"></h3>
+  <h2 class="card-text" th:text="${persona.telefono}"></h2>
+</div>
