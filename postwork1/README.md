@@ -1,4 +1,9 @@
-Postwork 1 
+## Postwork Sesión 1: Construcción de proyectos con Gradle
+
+## OBJETIVO
+- Transformar un ejemplo de Markdown en HTML a través de Gradle usando Gradle Markdown Plugin.
+
+## DESARROLLO
 Crear un archivo HTML a partir de un Markdown. 
 
 // Se crea el directorio donde se almacenara el archivo Mark down: src/Markdown
