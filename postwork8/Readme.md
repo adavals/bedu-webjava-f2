@@ -14,6 +14,8 @@
 3. Se reemplazó la clase que guardaba los datos en memoria por un repositorio de Spring Data.
 4. Se convirtió la clase `Persona` en una entidad de JPA.
 5. Los elementos de la aplicación se conectaron a través de servicios y controladores de Spring MVC.
+6. Se configuró el uso de h2 console para consultar la base de datos.
+7. Se modificó la plantilla html para incorporar el uso de fragmentos html reutilizables al desplegar la lista de personas de la agenda.
 
 #### El proyecto funcionando se ve de la siguiente manera:
 ![pantalla-aplicacion](img/pantalla-aplicacion.png)
